@@ -1,5 +1,5 @@
 FROM node:alpine
 
-WORKDIR /var/node
+WORKDIR /node
 
-CMD npm install /node/package.json && node /node/main.js
+CMD npm install && node /node/main.js
