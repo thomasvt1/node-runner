@@ -1,4 +1,5 @@
 FROM arm32v7/node:slim
+COPY qemu-aarch64-static /usr/bin/
 
 RUN apt-get update && \
   apt-get install git -y && \
