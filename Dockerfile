@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM arm32v7/node
 
 ARG arch=arm
 ENV ARCH=arm
