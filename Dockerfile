@@ -1,4 +1,4 @@
-FROM arm32v7/node:slim
+FROM arm32v6/alpine:3.7
 COPY qemu-arm-static /usr/bin/
 
 RUN apt-get update && \
