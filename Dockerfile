@@ -1,5 +1,7 @@
 FROM arm32v6/alpine:3.7
-COPY qemu-arm-static /usr/bin/
+
+ARG arch=arm
+ENV ARCH=arm
 
 RUN apt-get update && \
   apt-get install git -y && \
