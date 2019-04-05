@@ -1,11 +1,9 @@
-FROM arm32v6/alpine:3.7
+FROM node:alpine
 
 ARG arch=arm
 ENV ARCH=arm
 
-RUN apt-get update && \
-  apt-get install git -y && \
-  apt-get clean
+RUN apk --no-cache add git
 
 ENV FILE main.js  # Change the file to start
 
